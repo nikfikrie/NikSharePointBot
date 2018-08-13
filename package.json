@@ -4,11 +4,12 @@
   "description": "Sample QnA maker Bot for SharePoint Online using OAuth2",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FranckyC/SharePointBot.git"
+    "url": "git+https://github.com/FranckyC/SharePointBot.git"
   },
   "keywords": [
     "OAuth2",
@@ -20,13 +21,18 @@
   "author": "Franck Cornu - @FranckCornu (aequos)",
   "license": "MIT",
   "dependencies": {
-    "adal-node": "^0.1.22",
-    "botbuilder": "^3.8.4",
-    "botbuilder-cognitiveservices": "^1.1.0",
-    "es6-promise": "^4.0.5",
+    "adal-node": "^0.1.28",
+    "botbuilder": "^3.15.0",
+    "botbuilder-cognitiveservices": "^1.2.0",
+    "es6-promise": "^4.2.4",
     "html-entities": "^1.2.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.10",
     "node-fetch": "^1.6.3",
-    "restify": "^4.3.0"
-  }
+    "restify": "^4.3.4"
+  },
+  "bugs": {
+    "url": "https://github.com/FranckyC/SharePointBot/issues"
+  },
+  "homepage": "https://github.com/FranckyC/SharePointBot#readme",
+  "devDependencies": {}
 }

@@ -10,12 +10,12 @@ var _ = require('lodash');
 // ADAL Configuration
 //=========================================================
 var adalConfig = {
-    'clientId' : process.env.AAD_CLIENT_ID, // The client Id retrieved from the Azure AD App
-    'clientSecret' : process.env.AAD_CLIENT_SECRET, // The client secret retrieved from the Azure AD App
+    'clientId' : '8867ad87-6d1d-4a33-977b-119b0e8d16b7', // The client Id retrieved from the Azure AD App
+    'clientSecret' : 'grwj+eS9lUBYImkPetkCrAVhF5bGGPtWxD8z76zsE4k=', // The client secret retrieved from the Azure AD App
     'authorityHostUrl' : 'https://login.microsoftonline.com/', // The host URL for the Microsoft authorization server
-    'tenant' : process.env.TENANT, // The tenant Id or domain name (e.g mydomain.onmicrosoft.com)
-    'redirectUri' : process.env.REDIRECT_URI, // This URL will be used for the Azure AD Application to send the authorization code.
-    'resource' : process.env.RESOURCE, // The resource endpoint we want to give access to (in this case, SharePoint Online)
+    'tenant' : 'nikfikrie.onmicrosoft.com', // The tenant Id or domain name (e.g mydomain.onmicrosoft.com)
+    'redirectUri' : 'https://evotestwebapp.azurewebsites.net/api/oauthcallback', // This URL will be used for the Azure AD Application to send the authorization code.
+    'resource' : 'https://nikfikrie.sharepoint.com', // The resource endpoint we want to give access to (in this case, SharePoint Online)
 }
 
 adalConfig.authorityUrl = adalConfig.authorityHostUrl + adalConfig.tenant;
